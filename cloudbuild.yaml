@@ -8,3 +8,5 @@ steps:
 
 options:
   logging: CLOUD_LOGGING_ONLY  # Para enviar logs solo a Cloud Logging
+
+
