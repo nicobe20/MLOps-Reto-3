@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/nicobe20/mlops-Reto-3', '.']
+  args: ['build', '-t', 'gcr.io/nicobe20/mlops-reto-3', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/nicobe20/mlops-Reto-3']
+  args: ['push', 'gcr.io/nicobe20/mlops-reto-3']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'mlops-Reto-3', '--image=gcr.io/nicobe20/MLOps-Reto-3', '--region=us-central1', '--platform=managed']
+  args: ['beta', 'run', 'deploy', 'mlops-reto-3', '--image=gcr.io/nicobe20/mlops-reto-3', '--region=us-central1', '--platform=managed']
 
 options:
   logging: CLOUD_LOGGING_ONLY  # Para enviar logs solo a Cloud Logging
